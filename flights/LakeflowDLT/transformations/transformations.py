@@ -1,4 +1,4 @@
-from pyspark import pipelines as dp
+import dlt as dp
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
@@ -88,13 +88,3 @@ dp.create_auto_cdc_flow(
 def silver_business():
    df = dp.readStream('silver_bookings').join(dp.readStream('silver_flights'),['flight_id']).join(dp.readStream('silver_passengers'),['passenger_id']).join(dp.readStream('silver_airports'),['airport_id']).drop('modifiedDate')
    return df
-
-
-
-
-
-
-
-
-
-

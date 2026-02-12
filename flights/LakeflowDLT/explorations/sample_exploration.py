@@ -10,10 +10,10 @@
 
 import sys
 
-sys.path.append("/Workspace/Users/faizmustafa7428@gmail.com/LakeflowDeclarativePipeline")
+sys.path.append("/Workspace/Users/faizmustafa7428@gmail.com/LakeflowDLT")
 
 # COMMAND ----------
 
 # !!! Before performing any data analysis, make sure to run the pipeline to materialize the sample datasets. The tables referenced in this notebook depend on that step.
 
-display(spark.sql("SELECT * FROM flights.silver.sample_aggregation_lakeflowdeclarativepipeline"))
+display(spark.sql("SELECT * FROM flights.silver.sample_aggregation_lakeflowdlt"))

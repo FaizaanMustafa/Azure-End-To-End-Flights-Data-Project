@@ -1,6 +1,6 @@
-# LakeflowDeclarativePipeline
+# LakeflowDLT
 
-This folder defines all source code for the 'LakeflowDeclarativePipeline' pipeline:
+This folder defines all source code for the 'LakeflowDLT' pipeline:
 
 - `explorations`: Ad-hoc notebooks used to explore the data processed by this pipeline.
 - `transformations`: All dataset definitions and transformations.
@@ -11,7 +11,7 @@ This folder defines all source code for the 'LakeflowDeclarativePipeline' pipeli
 To get started, go to the `transformations` folder -- most of the relevant source code lives there:
 
 * By convention, every dataset under `transformations` is in a separate file.
-* Take a look at the sample under "sample_users_lakeflowdeclarativepipeline.py" to get familiar with the syntax.
+* Take a look at the sample under "sample_users_lakeflowdlt.py" to get familiar with the syntax.
   Read more about the syntax at https://learn.microsoft.com/azure/databricks/ldp/developer/python-ref.
 * Use `Run file` to run and preview a single transformation.
 * Use `Run pipeline` to run _all_ transformations in the entire pipeline.
